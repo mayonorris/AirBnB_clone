@@ -1,0 +1,150 @@
+/* styles/100-places.css */
+
+/* General styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Filters section styles */
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locations, .amenities {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.locations h3, .amenities h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.locations .popover, .amenities .popover {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.locations:hover .popover, .amenities:hover .popover {
+    display: block;
+}
+
+.search-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Places section styles */
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.places h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+article {
+    flex: 0 1 calc(33.33% - 40px);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #FF5A5F;
+    border-radius: 4px;
+}
+
+.title_of_place {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.price_by_night {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF5A5F;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border: 4px solid #FF5A5F;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.price_by_night p {
+    margin: 0;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.user {
+    margin-left: auto;
+}
+
+.ownerBold {
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .locations, .amenities {
+        width: 45%;
+    }
+
+    .search-button {
+        width: 100%;
+    }
+
+    .places article {
+        flex-basis: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 576px) {
+    .locations, .amenities {
+        width: 100%;
+    }
+
+    .places article {
+        flex-basis: calc(100% - 40px);
+    }
+}

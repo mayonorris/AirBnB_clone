@@ -1,0 +1,32 @@
+/* styles/100-places.css */
+
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.places h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article1, .article2, .article3, .article4, .article5, .article6, .article7, .article8, .article9 {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
+
+.pond {
+    background-color: #3384a0;
+}
+
+.lilypad {
+    background-color: #3cba92;
+}
+
+.flower {
+    background-color: #ff1e6b;
+}
